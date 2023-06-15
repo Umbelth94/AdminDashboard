@@ -21,7 +21,7 @@ body{
     grid-column: 2;
     
     display:grid;
-    grid-template-rows:auto auto;
+    grid-template: auto 1fr/ 2fr 1fr;
 
     border:1px solid black;
     padding:20px;
@@ -31,7 +31,7 @@ body{
         padding:20px;
 
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:auto 1fr;
     }
 
     .toprow h3{
@@ -44,7 +44,6 @@ body{
 
     #header input{
         height:20px;
-        width:auto;
         border:solid 1px black;
         border-radius:2px;
     }
