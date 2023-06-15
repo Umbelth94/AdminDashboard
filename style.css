@@ -55,10 +55,19 @@ body{
     
     display:grid;
     grid-template-columns:3fr 1fr;
+    background-color:gray;
 }
     
     #projects{
         grid-column: 1;
+
+        display:grid;
+        grid-template-rows:auto 1fr;
+        border:1px solid red;
+    }
+
+    #project-cards{
+        grid-row:2;
 
         display:grid;
         grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
@@ -68,30 +77,33 @@ body{
     #right-cards{
         grid-column:2;
 
-        display:grid;
-        grid-template-rows: 1fr 1fr;
+        display:flex;
+        flex-direction:column;
+        border:1px solid black;
     }
 
-        /* #announcements{
-            grid-row: 1;
-
-            display:grid;
+        #announcements{
+            display:flex;
+            flex-grow:1;
         }
 
         #trending{
-            grid-row: 2;
-            
-            display:grid;
-        } */
+          display:flex;
+          flex-grow:1;
+        }
+
+    .side-card{
+        border:1px solid green;
+    }
 
 .card{
-    height:200px;
+    height:auto;
     border:1px solid blue;
 }
 
 .side-card{
     height:auto;
-    margin:10px;
+    /* margin:10px; */
 }
 
 .trending h3{
