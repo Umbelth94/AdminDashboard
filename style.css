@@ -9,6 +9,7 @@
 body{
     display:grid;
     grid-template-columns:1fr 4fr;
+    gap:20px;
 }
 
 #sidebar{
@@ -20,7 +21,33 @@ body{
     grid-column: 2;
     
     display:grid;
+    grid-template-rows:auto auto;
+
+    border:1px solid black;
+    padding:20px;
 }
+    .toprow{
+        grid-row:1;
+        padding:20px;
+
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .toprow h3{
+        justify-self:end;
+    }
+
+    .botrow{
+        grid-row:2;
+    }
+
+    #header input{
+        height:20px;
+        width:auto;
+        border:solid 1px black;
+        border-radius:2px;
+    }
 
 #dashboard-container{
     grid-column:2;
@@ -32,22 +59,49 @@ body{
     
     #projects{
         grid-column: 1;
-        display:grid;
-    }
-
-    #announcements{
-        grid-column: 2;
 
         display:grid;
+        grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-rows:repeat(auto-fill, minmax(250px, 1fr));
+        gap:20px;
     }
 
-    #trending{
+    #right-cards{
         grid-column:2;
-        
+
         display:grid;
+        grid-template-rows: 1fr 1fr;
     }
 
+        /* #announcements{
+            grid-row: 1;
 
+            display:grid;
+        }
+
+        #trending{
+            grid-row: 2;
+            
+            display:grid;
+        } */
+
+.card{
+    height:200px;
+    border:1px solid blue;
+}
+
+.side-card{
+    height:auto;
+    margin:10px;
+}
+
+.trending h3{
+    margin-bottom:-20px;
+}
+
+#dashboard-container h3{
+    grid-row:1;
+}
 
 ul{
     list-style:none;
