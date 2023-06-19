@@ -40,19 +40,20 @@ body{
         
         padding-left:10px;
         
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        justify-items:center;
+        display:flex;
+        justify-content:center;
         align-items:center;
+        gap:1rem;
+        
     }
 
     #bell-icon{
         height:30px;
-        justify-self:end;
+       
     }
     #mini-profile-pic{
         height:40px;
-        justify-self:end;
+      
     }
 
     #main-profile{
