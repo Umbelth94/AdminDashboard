@@ -21,31 +21,54 @@ body{
     grid-column: 2;
     
     display:grid;
-    grid-template: auto 1fr/ 2fr 1fr;
+    grid-template: 1fr 1fr/ 2fr 1fr;
 
     border:1px solid black;
     padding:20px;
 }
-    .toprow{
-        grid-row:1;
-        padding:20px;
-
+    .search-container{
         display:grid;
-        grid-template-columns:auto 1fr;
+        grid-template-columns:30px auto;
+        align-items:center;
+        column-gap:15px;
     }
 
-    .toprow h3{
+
+    .profile-container{
+        grid-row:1;
+        grid-column:2;
+        
+        padding-left:10px;
+        
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        justify-items:center;
+        align-items:center;
+    }
+
+    #bell-icon{
+        height:30px;
+        justify-self:end;
+    }
+    #mini-profile-pic{
+        height:40px;
         justify-self:end;
     }
 
-    .botrow{
-        grid-row:2;
+    #main-profile{
+        grid-row:1;
+        grid-column:3;
+        justify-self:end;
+
     }
 
+
+
     #header input{
-        height:20px;
+
+        height:25px;
         border:solid 1px black;
-        border-radius:2px;
+        border-radius:10px;
     }
 
 #dashboard-container{
