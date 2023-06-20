@@ -22,6 +22,7 @@ body{
     
     display:grid;
     grid-template: 1fr 1fr/ 2fr 1fr;
+    column-gap:10px;
 
     border:1px solid black;
     padding:20px;
@@ -43,29 +44,71 @@ body{
         display:flex;
         justify-content:center;
         align-items:center;
-        gap:1rem;
-        
+        gap:1.2em;
+    }
+
+    .welcome-container{
+        grid-row:2;
+        grid-column:1;
+
+        display:grid;
+        grid-template-columns:1fr 6fr;
+        gap:15px;
+        justify-items:start;
+        align-items:center;
+    }
+    
+    .buttons-container{
+        grid-column:2;
+        grid-row:2;
+       
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        align-items:center;
+    }
+
+    .message{
+        display:flex;
+        flex-direction:column;
+        /* justify-content:center;
+        align-items:start;; */
+    }
+
+
+    #welcome, #name{
+        grid-column:2;
     }
 
     #bell-icon{
         height:30px;
-       
     }
+
     #mini-profile-pic{
-        height:40px;
-      
+        height:40px; 
+        border-radius:25%;
+    }
+
+    #profile-pic{
+        grid-column:1;
+        height:70px;
+        border-radius:25%;
     }
 
     #main-profile{
         grid-row:1;
         grid-column:3;
         justify-self:end;
+    }
 
+    input[type=button]{
+        width:90px;
+        height:35px;
+        border-radius:20px;
     }
 
 
 
-    #header input{
+    #header input[type=search]{
 
         height:25px;
         border:solid 1px black;
