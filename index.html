@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oogly's Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/869cd0d305.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -34,22 +35,23 @@
         
     </div>
     <div id="sidebar">
-        <h2>Dashboard</h2>
+        <h2 class="icon dash">Dashboard</h2>
         <div id="primary-links">
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+            <!-- I am utilizing font awesome to easily add icons here. -->
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-home"></i></span>Home </li>
+                <li><span class="fa-li"><i class="fa-solid fa-id-card"></i></span>Profile </li>
+                <li><span class="fa-li"><i class="fa-solid fa-message"></i></span>Messages </li>
+                <li><span class="fa-li"><i class="fa-solid fa-clock-rotate-left"></i></span>History </li>
+                <li><span class="fa-li"><i class="fa-solid fa-list-check"></i></span>Tasks </li>
+                <li><span class="fa-li"><i class="fa-solid fa-people-roof"></i></span>Communities </li>
             </ul>
         </div>
         <div id="secondary-links">
-            <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>Settings</li>
+                <li><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span>Support</li>
+                <li><span class="fa-li"><i class="fa-solid fa-user-secret"></i></span>Privacy</li>
             </ul>
         </div>
     </div>
