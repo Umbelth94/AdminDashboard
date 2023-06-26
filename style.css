@@ -190,7 +190,25 @@ ul li{
     height:auto;
     border:1px solid blue;
 
+    padding:15px;
+    margin:10px;
+
+    display:grid;
+    grid-template-rows:1fr 1fr;
 }
+
+    .top-card{
+        grid-row:1;
+
+        display:grid;
+        grid-template-rows:2;
+    }
+
+    .bot-card{
+        grid-row:2;
+        justify-self: end;
+        align-self:end;
+    }
 
 .side-card{
     height:auto;
@@ -211,7 +229,7 @@ ul{
 
 
 
-/* These are for the header icon */
+/* These are for the header icon in the sidebar*/
 .icon::before{
     display:inline-block;
     text-rendering:auto;
