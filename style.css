@@ -24,7 +24,7 @@ body{
     row-gap:50px;
 
     /* margin:20px; */
-    background-color:rgb(116, 116, 236);
+    background-color:#95a3a4;
 }
     #sidebar h2{
         /* margin-left:20px; */
@@ -145,24 +145,27 @@ ul li{
     
     display:grid;
     grid-template-columns:3fr 1fr;
-    background-color:gray;
+    background-color:#B7D1Da;
+    padding:1rem;
 }
     
     #projects{
         grid-column: 1;
 
         display:grid;
-        grid-template-rows:auto 1fr;
-        border:1px solid red;
-    }
-
-    #project-cards{
-        grid-row:2;
-
-        display:grid;
         grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+        grid-auto-rows:auto 1fr;
         gap:20px;
     }
+
+    #projects h3{
+        grid-column:1 / -1;
+    }
+
+   .bot-card > i {
+    width:40px;
+    font-size:20px;
+   }
 
     #right-cards{
         grid-column:2;
@@ -188,7 +191,9 @@ ul li{
 
 .card{
     height:auto;
-    border:1px solid blue;
+    border:1px solid rgb(0, 162, 255);
+    border-radius:15px;
+    background-color:white;
 
     padding:15px;
     margin:10px;
