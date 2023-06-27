@@ -193,13 +193,14 @@ ul li{
     height:auto;
     border:1px solid rgb(0, 162, 255);
     border-radius:15px;
-    background-color:white;
+    background-color:#e2e8dd;
 
     padding:15px;
     margin:10px;
 
     display:grid;
     grid-template-rows:1fr 1fr;
+    grid-template-columns:1fr auto;
 }
 
     .top-card{
@@ -213,6 +214,12 @@ ul li{
         grid-row:2;
         justify-self: end;
         align-self:end;
+    }
+
+    .cardcolor{
+        width:75%;
+        grid-row:1 / -1;
+        background-color:#4e5340;
     }
 
 .side-card{
