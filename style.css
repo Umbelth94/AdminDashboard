@@ -191,7 +191,6 @@ ul li{
 
 .card{
     height:auto;
-    border:1px solid rgb(0, 162, 255);
     border-radius:15px;
     background-color:#e2e8dd;
 
@@ -200,12 +199,13 @@ ul li{
 
     display:grid;
     grid-template-rows:1fr 1fr;
+    /* Added this to try and get side colors to work */
     grid-template-columns:1fr auto;
 }
 
     .top-card{
         grid-row:1;
-
+        padding:10px;
         display:grid;
         grid-template-rows:2;
     }
@@ -216,10 +216,15 @@ ul li{
         align-self:end;
     }
 
+   
     .cardcolor{
-        width:75%;
+        width:11px;
         grid-row:1 / -1;
+        grid-column:1;
         background-color:#4e5340;
+        margin:-15px;
+        border-radius:20px 0px 0px 20px;
+
     }
 
 .side-card{
