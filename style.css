@@ -157,8 +157,9 @@ ul li{
 
         display:grid;
         grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-rows:auto 1fr 1fr;
-        grid-auto-rows:1fr;
+        /* Experiment with this on a larger monitor to get some dynamic height scaling for cards (but not too much now) */
+        grid-template-rows:50px repeat(3, clamp(100px, 50%, 300px));
+        /* grid-auto-rows:min(250px, 400px); */
         gap:20px;
     }
 
