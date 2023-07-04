@@ -259,12 +259,19 @@ ul li{
     margin-bottom:15px;
 }
 
-.announcement-card, .trending-card{
+.announcement-card{
     flex:1;
     display:flex;
 
     flex-direction:column;
     justify-content:space-around;
+    margin-bottom:15px;
+}
+
+.trending-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
 }
 
 .side-card{
@@ -272,7 +279,7 @@ ul li{
     border-radius:15px;
     background-color:#e2e8dd;
     padding:30px;
-    margin-bottom:25px;
+    /* margin-bottom:25px; */
 }
 
 .people{
