@@ -201,7 +201,8 @@ ul li{
         } */
     
     .category p,
-    .top-card p
+    .top-card p,
+    .people p
     {
         margin-top:5px;
         color:#646b6b
@@ -273,6 +274,55 @@ ul li{
     padding:30px;
     margin-bottom:25px;
 }
+
+.people{
+    display:grid;
+    grid-template-columns:60px 1fr;
+    gap:15px;
+    margin-top:10px;
+    margin-bottom:10px;
+    align-items:center;
+}
+
+.people h5{
+    font-size:16px;
+}
+
+.people p{
+    margin-top:0;
+}
+
+.people-text{
+    grid-column:2;
+}
+.people img{
+    grid-column:1;
+    height:60px;
+    width:60px;
+    margin-right:15px;
+}
+    .jlow{
+        border:2px solid rgb(216, 131, 145);
+        border-radius:50%;
+        background-color:pink;
+    }
+
+    .gregg{
+        border:2px solid rgb(3, 155, 3);
+        border-radius:50%;
+    }
+
+    .dan{
+        border:2px solid rgb(69, 69, 177);
+        border-radius:50%;
+        background-color:aqua
+    }
+
+    .cat{
+        border:2px solid gray;
+        border-radius:50%;
+        background-color:rgb(184, 182, 182);
+    }
 
 .divider{
     height:1px;
