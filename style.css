@@ -186,18 +186,19 @@ ul li{
     #right-cards{
         grid-column:2;
 
-        display:grid;
-        grid-template-rows:1fr 1fr;
-        gap:20px;
+        display:flex;
+        flex-direction:column;
+        /* grid-template-rows:50px 50px;
+        gap:20px; */
     }
 
-        #announcements{
+        /* #announcements{
         grid-row:1;
         }
 
         #trending{
         grid-row:2;
-        }
+        } */
     
     .category p,
     .top-card p
